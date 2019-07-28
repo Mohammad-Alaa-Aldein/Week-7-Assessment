@@ -23,17 +23,31 @@ Output =>
 
 */
 
-function MultiByNum1OrNum2() {
-  // WRITE YOUR CODE UNDER THIS LINE         
-}
+
+
+	function MultiByNum1OrNum2(arr,num1,num2) {
+
+		var newArr=arr.map(function(arr){
+			if(arr%num1==1){
+				return arr * num2
+			}
+			else {
+				return arr * num1
+			}
+		})
+		return newArr;
+		}
+		MultiByNum1OrNum2([6,7,8],3,2);
+
+
 
 /* Q2:
 Using Filter
 Create a function called longerAndYounger
 that takes an array of objects and 2 numbers as a parameter
 and return a new array with the object has 
-a name longer than the first parameter
-and in the same time less than the second parameters 
+a name longer than the second parameter
+and in the same time the age less than the third parameter
 
 var arrOfObj1 = [
   { name: "alex" ,age:22},
@@ -58,9 +72,35 @@ Output =>
 ]
 */
 
-function longerAndYounger() {
-  // WRITE YOUR CODE UNDER THIS LINE         
-}
+function longerAndYounger(arrOfObj1, num1, num2) {
+  // WRITE YOUR CODE UNDER THIS LINE     
+  var num1=3
+  var num2=30
+  // var newArr = [];
+  var arrOfObj1 = [
+  { name: "alex" ,age:22},
+  { name: "mercer",age:26},
+  { name: "alice" ,age:33},
+  { name: "zaheer",age:35},
+  { name: "elizabeth",age:45}
+];
+
+// for (i=0; i<arrOfObj1.length; i++){
+// 	if (arrOfObj1[i].name.length>num1 && arrOfObj1[i].age < num2) {
+	var result = arrOfObj1.filter(arrOfObj1 => arrOfObj1[i].name.length>num1 && arrOfObj1[i].age < num2);
+	// }
+	
+   
+	console.log (result);
+
+
+longerAndYounger(arrOfObj1 = [
+  { name: "alex" ,age:22},
+  { name: "mercer",age:26},
+  { name: "alice" ,age:33},
+  { name: "zaheer",age:35},
+  { name: "elizabeth",age:45}
+],3,30);
 
 /* Q3:
 Using Reduce

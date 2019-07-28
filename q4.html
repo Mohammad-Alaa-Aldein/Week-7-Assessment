@@ -2,11 +2,54 @@
 <html>
 
 <head>
-	<!-- WRITE YOUR CODE UNDER THIS LINE          -->
-</head>
 
+	 <title>Assesment7 - Q4</title>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+<script>
+     $(document).ready(function(){
+        $("#no").click(function(){
+            $(".main").css({
+                color: 'red',
+            });
+        });
+    });
+
+      $(document).ready(function(){
+        $("#yes").click(function(){
+            $(".main").css({
+                color: 'green',
+            });
+        });
+    });
+</script>
+<style>
+    .main{
+        font-size: 40px;
+    }
+    #no{
+        background: red;
+        padding: 15px;
+        font-size: 30px; 
+    }
+    #yes{
+        background: green;
+        padding: 15px;
+        font-size: 30px; 
+
+    }
+</style>
 <body>
-	<!-- WRITE YOUR CODE UNDER THIS LINE          -->
+    <!-- WRITE YOUR CODE UNDER THIS LINE          -->
+    <div class ="main">
+      <p>Main div is here</p>
+	</div>
+    	<button id = "no"> red</button>
+        <button id = "yes">green</button>
+
 </body>
 
 </html>
